@@ -41,7 +41,7 @@ export async function logout() {
 //     return error ? console.error(error) : data;
 // }
 export async function getWorkshops() {
-    const response = await client.from('workshops').select('*, participants');
+    const response = await client.from('workshops').select('*, participants(*)');
     if (response.error) {
         console.error(response.error.message);
     } else {
