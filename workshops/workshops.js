@@ -4,10 +4,16 @@ import { renderWorkshop } from '../render-utils.js';
 checkAuth();
 
 const logoutButton = document.getElementById('logout');
+const addNewButton = document.getElementById('add');
 
 logoutButton.addEventListener('click', () => {
     logout();
 });
+// addNewButton.addEventListener('click', () => {
+//     if (checkAuth()) window.location.href = '/new-post/';
+//     console.log('clicking button');
+
+// });
 
 async function displayWorkshops() {
     const main = document.querySelector('main');
