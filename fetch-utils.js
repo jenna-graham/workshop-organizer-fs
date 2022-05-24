@@ -56,4 +56,13 @@ export async function createParticipant(participant) {
     } else {
         return response.data;
     }
+    
+}
+export async function deleteParticipant(id) {
+    const response = await client.from('participants').delete().eq('id', id);
+    if (response.error) {
+        console.error(response.error.message);
+    } else {
+        return response.data;
+    }
 }
