@@ -4,7 +4,7 @@ import { renderWorkshop } from '../render-utils.js';
 checkAuth();
 
 const logoutButton = document.getElementById('logout');
-const addNewButton = document.getElementById('add');
+// const addNewButton = document.getElementById('add');
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -27,9 +27,10 @@ async function displayWorkshops() {
             const li = document.createElement('li');
             li.textContent = `${participant.name}: ${participant.contact_info}`;
             li.addEventListener('click', async () => {
-                console.log('clicking participant id: ', participant.id);
+                console.log('clicking participant id:', participant.id);
+                await deleteParticipant(participant.id);
                 await displayWorkshops();
-                await deleteParticipant();
+                
             });
             ul.append(li);
         }
