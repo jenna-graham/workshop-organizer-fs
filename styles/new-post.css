@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    width: 800px;
+    height: 300px;
+    padding: 30px;
+    align-items: center;
+    
+  
+    
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+button {
+    width: 150px;
+    height: 25px;
+    background-color: rgba(222, 184, 135, 0.596);
+}
+select {
+    height: 30px;
+    margin-bottom: 20px;
+    
+}
+input {
+    margin-bottom: 10px;
+    height: 25px;
+}

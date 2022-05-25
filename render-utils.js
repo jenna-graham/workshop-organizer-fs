@@ -1,11 +1,13 @@
 export function renderWorkshop(workshop) {
     const div = document.createElement('div');
     div.classList.add('workshop');
+    const img = document.createElement('img');
+    img.src = `../assets/${workshop.image}.jpg`;
 
     const h2 = document.createElement('h2');
     h2.textContent = workshop.name;
 
-    div.append(h2);
+    div.append(img, h2);
     return div;
 }
 export function renderOption(workshop) {
