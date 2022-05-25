@@ -1,10 +1,10 @@
 img {
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     padding: 20px;
 }
 div {
-    
+    background-color: rgba(252, 251, 251, 0.546);
     border: solid 2px;
     padding: 20px;
 }

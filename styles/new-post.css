@@ -3,19 +3,21 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(../assets/pexels-gdtography-911738.jpg);
 }
 main {
     display: flex;
     flex-direction: column;
-    border: solid 1px;
-    width: 800px;
-    height: 300px;
+    border: solid 4px;
+    width: 500px;
+    height: 500px;
     padding: 30px;
     align-items: center;
-    
-  
-    
+    background-color:rgba(76, 76, 76, 0.546);
+    background-size: cover;
+    justify-content: center;
 }
+
 form {
     display: flex;
     justify-content: center;
