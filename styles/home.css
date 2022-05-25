@@ -1,1 +1,21 @@
-/* add home page styles here */
+body {
+    background-image: url(../assets/pexels-gdtography-911738.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+div {
+    border: 2px solid;
+    padding: 20px;
+    margin: 20px;
+}
+div.auth-container {
+    background-color: rgba(252, 251, 251, 0.546);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
