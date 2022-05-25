@@ -6,13 +6,15 @@ const test = QUnit.test;
 test('renderWorkshop', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div class="workshop"><h2>Pottery 101</h2></div>`;
+    const expected = `<div class="workshop"><img src="../assets/undefined.jpg"><h2>Wheel House | Pottery 101</h2></div>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = renderWorkshop({
         id: 1,
-        name: 'Pottery 101',   
+        img: '../assets/pottery.jpg',
+        name: 'Wheel House | Pottery 101', 
+          
     });
 
     //Expect
